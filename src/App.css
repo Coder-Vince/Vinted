@@ -1,1 +1,103 @@
-/* Other rules */
+/* HEADER */
+
+.Header {
+  margin: auto 100px;
+  /* border: solid black 2px; */
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header img {
+  margin: auto 0px;
+  margin-top: 10px;
+  height: 30px;
+  width: 80px;
+}
+
+.Header nav button {
+  margin-right: 10px;
+}
+
+/* HOME */
+
+.subheader {
+  border: black solid 2px;
+  height: 500px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.subheader div {
+  /* border: blue solid 2px; */
+  width: 400px;
+  height: 250px;
+  margin-top: 100px;
+  margin-left: 100px;
+  height: 50px;
+}
+
+.posts {
+  border: black solid 2px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post {
+  /* border: black solid 2px; */
+  width: 235px;
+  height: 460px;
+}
+
+.price :first-child {
+  font-family: Maison Neue;
+  color: black;
+  font-weight: bold;
+  size: 14px;
+  line-height: 18px;
+}
+
+.post p {
+  font-family: Maison Neue;
+  color: #999999;
+  font-weight: regular;
+  size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+/* Offers */
+
+.Offers {
+  /* border: green solid 2px; */
+  height: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-picture {
+  /* border: blue solid 2px; */
+  margin-top: 85px;
+  height: 100px;
+  width: 100px;
+}
+
+.product-description {
+  /* border: black solid 2px; */
+  margin-top: 85px;
+  height: 100px;
+  width: 100px;
+}
+
+.picture img {
+  /* border: black solid 2px; */
+  height: 360px;
+  width: 233px;
+}
