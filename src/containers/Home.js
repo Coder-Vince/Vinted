@@ -26,9 +26,10 @@ function Home() {
       <div>
         {/* <Header /> */}
         <div className="subheader">
-          {/* <img src={subheader} alt="subheader-vinted" /> */}
+          <img src={subheader} alt="subheader-vinted" />
           <div>
-            <h1>Prêts à faire du tri dans vos placards?</h1>
+            <p>Prêts à faire du tri dans vos placards?</p>
+
             <button>Commencer à vendre</button>
           </div>
         </div>
@@ -41,18 +42,15 @@ function Home() {
               <div className="post">
                 <Link to={`/offer/${item._id}`} key={item._id}>
                   {/* <div>{data.product_name} go to offers</div> */}
-                  <div>
-                    <span>
-                      {item.owner.account.avatar.secure_url ? (
-                        <img
-                          src={item.owner.account.avatar.secure_url}
-                          alt="pic"
-                        />
-                      ) : null}
-                    </span>
-                    <span>
-                      <p> {item.owner.account.username}</p>
-                    </span>
+                  <div className="top">
+                    {item.owner.account.avatar ? (
+                      <img
+                        className="avatar"
+                        src={item.owner.account.avatar.secure_url}
+                        alt="pic"
+                      />
+                    ) : null}
+                    <p> {item.owner.account.username}</p>
                   </div>
                   <div className="picture">
                     <img src={item.product_image.secure_url} alt="" />

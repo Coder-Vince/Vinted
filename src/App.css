@@ -1,3 +1,10 @@
+/* BODY */
+body {
+  font-family: "Maison Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* HEADER */
 
 .Header {
@@ -16,41 +23,144 @@
   width: 80px;
 }
 
-.Header nav button {
+.Header nav {
+  /* border: solid black 2px; */
   margin-right: 10px;
+}
+
+.CreateAcct {
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: #fff;
+  color: #2cb1ba;
+  height: 30px;
+  width: 115px;
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-family: "Maison Neue";
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  font: 400 13.3333px Arial;
+  padding: 6px 6px;
+}
+
+.login {
+  text-decoration: none;
+  background-color: #fff;
+  color: #2cb1ba;
+  height: 30px;
+  width: 115px;
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-family: "Maison Neue";
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  font: 400 13.3333px Arial;
+  padding: 6px 6px;
 }
 
 /* HOME */
 
 .subheader {
-  border: black solid 2px;
+  /* border: black solid 2px; */
+  position: relative;
   height: 500px;
   max-width: 1440px;
   width: 100%;
 }
 
+.subheader img {
+  min-width: 1440px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .subheader div {
+  position: absolute;
+  background-color: white;
   /* border: blue solid 2px; */
   width: 400px;
   height: 250px;
-  margin-top: 100px;
-  margin-left: 100px;
-  height: 50px;
+  left: 50px;
+  padding: 25px;
+  top: 75px;
+}
+
+.subheader p {
+  font-size: 34px;
+  margin-top: 35px;
+}
+
+.subheader button {
+  height: 45px;
+  width: 187px;
+  background-color: #2baeb7;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 0 14px;
+  margin-top: 32px;
+  cursor: pointer;
 }
 
 .posts {
-  border: black solid 2px;
+  /* border: black solid 2px; */
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .post {
   /* border: black solid 2px; */
+  width: calc(20% - 10px);
   width: 235px;
   height: 460px;
+  padding: 0 6px 16px;
+  /* cursor: pointer; */
+}
+
+.top {
+  /* border: black solid 2px; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.avatar {
+  vertical-align: middle;
+  max-width: 25px;
+  max-height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .price :first-child {
@@ -67,37 +177,62 @@
   font-weight: regular;
   size: 12px;
   line-height: 16px;
-  text-decoration: none;
-}
-
-/* Offers */
-
-.Offers {
-  /* border: green solid 2px; */
-  height: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product-picture {
-  /* border: blue solid 2px; */
-  margin-top: 85px;
-  height: 100px;
-  width: 100px;
-}
-
-.product-description {
-  /* border: black solid 2px; */
-  margin-top: 85px;
-  height: 100px;
-  width: 100px;
+  text-decoration: none !important;
 }
 
 .picture img {
   /* border: black solid 2px; */
   height: 360px;
   width: 233px;
+}
+
+/* Offers */
+
+.back {
+  height: calc(100vh - 60px);
+  background-color: #ebedee;
+}
+
+.Offers {
+  /* border: green solid 2px; */
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.product-picture {
+  /* border: blue solid 2px; */
+  margin-left: 0px;
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+.product-picture img {
+  display: block;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 320px;
+  height: 100%;
+  padding: 40px;
+  /* border: black solid 2px; */
+  margin-top: 30px;
+  /* height: 100px;
+  width: 100px; */
+}
+
+.product-description p {
+  size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.offerul {
+  padding: 0;
+  display: block;
 }
